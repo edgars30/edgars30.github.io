@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang=“en”>
   <head>
-     <link rel=“stylesheet” href=“https://pyscript.net/latest/pyscript.css”>
-        <scrypt defer src=“https://pyscript.net/latest/pyscript.js”></script>
-        <style>
-           label{
-               display:block;
-           ;
-        </style>
+    <link rel=“stylesheet” href=“https://pyscript.net/latest/pyscript.css”>
+    <scrypt defer src=“https://pyscript.net/latest/pyscript.js”></script>
+    <style>
+      label{
+          display:block;
+      }
+    </style>
    </head>
    <body
       <form>
          <label for=“operandOne”>x:</label><input name=“operandOne” id=“operandOne" value=“10”>
+
          <label for=“total”>Result:</label><div name=“total”></div>
       </form>
       <py-script>
