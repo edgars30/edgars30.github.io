@@ -15,6 +15,11 @@
 
       <label for=“total”>Result:</label><div name=“total”></div>
     </form>
-    <py-script> input_box = Element("operandOne") operandOne = float(input_box.value) result = Element("total") result.write("Hello!  The input says:" + str(operandOne))</py-script>
-  </body>
+    <py-script>
+      input_box = Element("operandOne") 
+      operandOne = float(input_box.value) 
+      result = Element("total") result.write("Hello!  
+      The input says:" + str(operandOne))
+    </py-script>
+  </body>   
 </html>
