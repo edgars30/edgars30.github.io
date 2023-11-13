@@ -5,17 +5,17 @@
 		<script defer src="https://pyscript.net/latest/pyscript.js"></script>
 		<style>
 			label{
-			   display:block;
+			    display:block;
 			}
 		</style>
 	</head>
 	<body>
 		<py-config>
-packages = ['numpy']
+			packages = ['numpy']
 		</pyconfig>
 		<py-script>
-import numpy as np
-selection = np.random.randint(0,100,1)[0]
+			import numpy as np
+			selection = np.random.randint(0,100,1)[0]
 		</py-script>
 		<form>
 			<label for="guess">Guess:</label><input names= "guess" id="guess">
