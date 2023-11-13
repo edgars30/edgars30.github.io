@@ -27,7 +27,7 @@
 		<py-script>
 			from pyscript import when
 			@when("click", selector="#submit")
-			def check_guess()
+			def check_guess():
 				user_guess = int(Element("guess").value)
 				result = Element("result")
 				if user_guess == selection:
@@ -37,7 +37,7 @@
 				else:
 					result.write("Try again! Your guess was to low.")
 
-					
+
 		</py-script>
 	</body>
 </html>
