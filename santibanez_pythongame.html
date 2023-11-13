@@ -11,11 +11,11 @@
 	</head>
 	<body>
 		<py-config>
-			packages = ['numpy']
+packages = ['numpy']
 		</pyconfig>
 		<py-script>
-			import numpy as np
-			selection = np.random.randint(0,100,1)[0]
+import numpy as np
+selection = np.random.randint(0,100,1)[0]
 		</py-script>
 		<form>
 			<label for="guess">Guess:</label><input names= "guess" id="guess">
@@ -24,17 +24,17 @@
 		</form>
 
 		<py-script>
-			from pyscript import when
-			@when("click", selector="#submit")
-			def check_guess()
-				user_guess = int(Element("guess").value)
-				result = Element("result")
-				if user_guess == selection:
-					result.write("Congratulations! You guessed correctly.")
-				elif user_guess > selection:
-					result.write("Try again! Your guess too high.")
-				else:
-					result.write("Try again! Your guess was to low.")
+from pyscript import when
+@when("click", selector="#submit")
+def check_guess()
+user_guess = int(Element("guess").value)
+result = Element("result")
+if user_guess == selection:
+	result.write("Congratulations! You guessed correctly.")
+elif user_guess > selection:
+	result.write("Try again! Your guess too high.")
+else:
+	result.write("Try again! Your guess was to low.")
 		</py-script>
 	</body>
 </html>
