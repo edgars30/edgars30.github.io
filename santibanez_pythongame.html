@@ -4,8 +4,8 @@
 		<link rel="stylesheet href= "https://pyscript.net/latest/pyscript.css" />
 		<script defer src="https://pyscript.net/latest/pyscript.js"></script>
 		<style>
-			label[
-			   display:block:
+			label{
+			   display:block;
 			}
 		</style>
 	</head>
@@ -21,7 +21,7 @@
 		<label for="guess">Guess:</label><input names= "guess" id="guess">
 		<button type="button" id=""submit">Check Guess</button>
 		<label for="result">Result:</label><div name="result" id="result"></div>
-	</form
+	</form>
 	<py-script>
 		from pyscript import when
 		@when("click", selector="submit")
